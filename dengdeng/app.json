@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/seller/seller",
+    "pages/manage/manage",
+    "pages/login/login",
+    "pages/registered/registered",
+    "pages/findpass/findpass"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#32302E",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff",
+    "borderStyle": "#F2F2F2"
+  },
+  "tabBar": {
+    "color": "#32302F",
+    "selectedColor": "#FAC50B",
+    "backgroundColor": "#DDDDDD",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "进货",
+        "iconPath": "image/tab1.png",
+        "selectedIconPath": "image/tab1_s.png"
+      },
+      {
+        "pagePath": "pages/seller/seller",
+        "text": "卖货",
+        "iconPath": "image/tab2.png",
+        "selectedIconPath": "image/tab2_s.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "image/tab3.png",
+        "selectedIconPath": "image/tab3_s.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

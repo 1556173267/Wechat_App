@@ -1,0 +1,96 @@
+<!-- 卖货 -->
+<view class="container flex-wrap flex-direction-col">
+  <!-- 轮播图 -->
+  <view class="my-swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" height="150"  />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="id_name bt-f2 bb-f2 color-black">
+    <view id="line"></view>
+    <view class="name">{{username}}</view>
+    <view class="login_btn color-darkgray" bindtap="login">{{login_m}}</view>
+  </view>
+  <!-- 两大块 -->
+  <view class="weui-flex bb-f2">
+    <view class="weui-flex__item br-f2">
+      <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+          <view class="weui-msg__title" class="b_txt color-darkgray">推广图册</view>
+          <view>
+            <text class="b_txt_mes color-yellow">共432件产品</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+          <view class="weui-msg__title" class="b_txt color-darkgray">已出订单</view>
+          <view>
+            <text class="b_txt_mes color-yellow">3笔新订单</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 跳转列表 -->
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="../../image/fenxiang.png" style="margin-right: 5px;vertical-align: middle;width:25px; height: 25px;"></image>
+      </view>
+      <view class="weui-cell__bd">我的下级管理</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="../../image/yaoqingma.png" style="margin-right: 5px;vertical-align: middle;width:25px; height: 25px;"></image>
+      </view>
+      <view class="weui-cell__bd">我的邀请码</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="../../image/lianxiren.png" style="margin-right: 5px;vertical-align: middle;width:25px; height: 25px;"></image>
+      </view>
+      <view class="weui-cell__bd">修改联系人资料</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="view_fenxiao">
+      <view class="weui-cell__hd">
+        <image src="../../image/shuju.png" style="margin-right: 5px;vertical-align: middle;width:25px; height: 25px;"></image>
+      </view>
+      <view class="weui-cell__bd">查看分销数据</view>
+      <view class="weui-cell__ft {{icon_r}}">
+        <image src="../../image/bottom.png" id="{{icon_b}}"></image>
+      </view>
+    </navigator>
+    <view class="weui-flex {{fx_data}}">
+      <view class="weui-flex__item fenxiao">
+        <view class="weui-msg">
+          <view class="weui-msg__icon-area">
+            <view class="weui-msg__title" class="b_txt color-darkgray">分销总浏览量</view>
+            <view>
+              <text class="b_txt_mess color-yellow">245</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-flex__item fenxiao">
+        <view class="weui-msg">
+          <view class="weui-msg__icon-area">
+            <view class="weui-msg__title" class="b_txt color-darkgray">分销总次数</view>
+            <view>
+              <text class="b_txt_mess color-yellow">6</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

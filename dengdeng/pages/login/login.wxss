@@ -1,0 +1,118 @@
+
+view{
+  display: inline;
+}
+.container{
+  margin-top: 80rpx;
+  height: 100%;
+}
+
+.account{
+  background-color: #fff;
+  height: 100rpx;
+  font-size: 12pt;
+
+}
+.account:first-child{
+   border-bottom: 1px solid #F4F4F4;
+}
+#account{
+ height:100rpx;
+ padding-left: 20rpx;
+ width: 80%;
+ float: left;
+
+}
+#pass{
+ height:100rpx;
+padding-left: 20rpx;
+ width: 80%;
+ float: left;
+ 
+}
+#account_icon{
+  width: 20%;
+  float: right;
+  
+  height: 100rpx;
+  margin-top: 30rpx;
+
+}
+.idicon_h{
+  display: none;
+}
+.idicon_s{
+  display: block;
+}
+#pass_icon{
+    width: 50rpx;
+   height: 50rpx;
+    position:relative;
+    top: 30rpx;
+   
+}
+.longinbtn{
+  margin-top: 60rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+#lgbtn_no{
+  background-color: #C9C9C9;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 100rpx
+
+}
+/*可以登录按钮样式*/
+#lgbtn{
+  background-color: #FBC50A;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 100rpx
+ 
+
+}
+#foot_mes{
+  font-size: 12pt;
+  padding: 30rpx 2.5%;
+}
+#find_pass{
+  float: right;
+}
+.other_longin{
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  height: 250rpx;
+  width: 90%;
+  border-top: 1px solid #ccc;
+   text-align: center
+}
+#other_lgt{
+  font-size: 11pt;
+  background-color: #F9F9F9;
+  padding: 10rpx 30rpx;
+  position: relative;
+  top: -25rpx;
+
+}
+#wx_icon{
+  position: absolute;
+  bottom: 100rpx;
+  text-align: center;
+  width: 100%;
+ 
+}
+
+#islogin{
+  background-color: #C7C7CD;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 80rpx
+}

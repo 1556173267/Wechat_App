@@ -1,0 +1,34 @@
+/**app.wxss**/
+@import 'weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-between;
+  /*padding: 200rpx 0;*/
+  box-sizing: border-box;
+} 
+page{
+  background-color:#F9F9F9;
+  font-family: "微软雅黑"
+}
+
+/*统一公共颜色*/
+.color-a { color: #13227A}
+.color-black { color: #32302F}
+.color-yellow { color: #FAC50B}
+.color-darkgray { color: #797979}
+.color-lightgray { color: #BFBFBF}
+.color-white { color: #FFF}
+.bg-black { background: #32302F; color: #FFF;}
+.bg-white { background: #FFF;}
+.bg-blue { background: rgb(40, 150, 164)}
+.bg-gray { background: #C9C9C9; color: #FFF;}
+.bg-yellow { background: #fac50b; color: #FFF;}
+/*浅灰线条*/
+.bt-f2 {border-top: solid 1px #F2F2F2;}
+.bb-f2 {border-bottom: solid 1px #F2F2F2;}
+.br-f2 {border-right: solid 1px #F2F2F2;}
+.bl-f2 {border-left: solid 1px #F2F2F2;}
+.btn-f2 {border-top: none;}

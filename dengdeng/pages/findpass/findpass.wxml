@@ -1,0 +1,5 @@
+<text>找回密码页面</text>
+<button bindtap="getnew" id="getmovies">获取最新电影</button>
+<!--<image src="{{movies[1].image}}">-->
+<text>{{movies[1].title}}</text>
+<image src="{{movies[1].image}}" width="100px" height="100px">

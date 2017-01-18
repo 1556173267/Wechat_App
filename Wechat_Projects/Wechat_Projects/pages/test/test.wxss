@@ -1,0 +1,37 @@
+.test-container {
+    height: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 0 0 0;
+}
+.test-text {
+    display: flex;
+}
+
+.test-view {
+    display: flex;
+}
+.bc_green {
+    height: 200px;
+    /*margin: 0 20rpx 0 0;*/
+    background-color: green;
+}
+.bc_blue {
+    height: 200px;
+    background-color: blue;
+}
+.bc_yellow {
+    height: 200px;
+    background-color: yellow;
+}
+.bc_red {
+    height: 200px;
+    background-color: red;
+}
+.test-scroll {
+    display: flex;
+    flex-direction: row;
+}

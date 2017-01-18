@@ -1,0 +1,87 @@
+/* pages/registered/registered.wxss */
+.container{
+  margin-top: 80rpx;
+  height: 100%;
+}
+.phone{
+    width: 100%;
+    height: 100rpx;
+    font-size: 12pt;
+    background-color: white
+}
+.phone{
+  border-bottom: 1px solid #ccc;
+}
+#phone_num{
+    width: 70%;
+    height: 100rpx;
+    float: left;
+}
+#phone_number,#phone_password{
+    height: 100rpx;
+    padding-left: 20rpx;
+
+}
+#phone_code{
+    width: 30%;
+    float: right;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.codetext{
+  font-size: 9pt;
+  background-color:#C7C7CD; 
+  padding: 15rpx 40rpx;
+  color: white;
+}
+/*监听手机输入框可以发送验证码显示*/
+.send_code{
+  font-size: 9pt;
+  padding: 15rpx 40rpx;
+  color: white;
+  background-color: #FBC50A;
+}
+#phone_pass{
+    width: 80%;
+}
+#pass_i{
+    width: 20%;
+    float: right
+}
+#pass_icon{
+    width: 40rpx;
+    height: 40rpx;
+    position:relative;
+  
+}
+#pass{
+ height:100rpx;
+ padding-left: 20rpx;
+ width: 80%;
+ float: left;
+}
+#pass_icon{
+    width: 50rpx;
+   height: 50rpx;
+    position:relative;
+    top: 30rpx;
+   
+}
+.longinbtn{
+  margin-top: 60rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+/*信息完整后可注册,按钮颜色改变*/
+#lgbtn{
+  background-color: #FBC50A;
+  color: white;
+  border-radius: 0;
+}
+/*不可以注册*/
+#lgbtn_no{
+  background-color: #ccc;
+  color: white;
+  border-radius: 0;
+}

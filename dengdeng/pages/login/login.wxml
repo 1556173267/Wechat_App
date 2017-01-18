@@ -1,0 +1,32 @@
+<!-- index.wxml -->
+<view class="container">
+      <view class="account">
+            <view>
+                  <input id="account" value="{{inputValue1}}" placeholder="帐号" bindinput="bindKeyInput"  />
+            </view>
+            <view>
+                  <image src="../../image/close.png" id="pass_icon" class="{{idclass}}" bindtap="cleanid"></image>
+            </view>
+      </view>
+      <view class="account">
+            <view>
+                  <input id="pass" value="{{inputValue2}}" placeholder="密码" bindinput="bindKeyInput2"
+                         password="{{password}}"  />
+            </view>
+            <view>
+                  <image src="{{src}}" id="pass_icon" bindtap="viewpass"></image>
+            </view>
+      </view>
+      <view class="longinbtn" id="{{is_login}}"   bindtap="loginbtn" >登录</view>
+      <view id="foot_mes">
+            <text id="regbtn" bindtap="registe">注册</text>
+            <text id="find_pass" bindtap="findpass">忘记密码?</text>
+      </view>
+      <!-- 社交账户登录 -->
+      <view class="other_longin">
+            <text id="other_lgt">社交账户快速登录</text>
+      </view>
+      <view id="wx_icon">
+            <image src="../../image/wx_icon.png" style="width:100rpx;height:100rpx;"></image>
+      </view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/manage/manage.wxss */
+
+.weui-cell-f{
+    padding-top: 30rpx;
+    padding-bottom: 40rpx;
+    background-color: white
+}
+.weui-cells{
+    margin-top: 50rpx;
+}
+.weui-cell:before {
+    
+border-top:1rpx solid #F2F2F2;
+}
+.weui-cells::before{
+   border-top: solid 1px #F2F2F2;
+}
+#login_btn{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 10%;
+}

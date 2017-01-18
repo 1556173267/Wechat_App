@@ -1,0 +1,20 @@
+<!--pages/registered/registered.wxml-->
+<view class="container">
+    <view class="phone">
+        <view id="phone_num"><input  id="phone_number" placeholder="手机号" value="{{inputValue1}}"  bindinput="bindKeyInput" type="number" maxlength="11"/></view>
+        <view id="phone_code"><text class="{{sendcode}}">发送验证码</text></view>
+    </view>
+    <view class="phone">
+       <view>
+            <input  id="pass" value="{{inputValue2}}"  placeholder="请设置密码(密码长度大于6位)" bindinput="bindKeyInput2" password="{{password}}"/>
+        </view>
+       <view><image src="{{src}}" id="pass_icon" bindtap="viewpass" ></image></view>
+       </view>
+     <view class="phone">
+          <view id="code"><input  id="phone_number" placeholder="验证码" value="{{code}}"  bindinput="bindKeyInput3" type="number" maxlength="11"/></view>
+    </view>
+     <view class="longinbtn">
+            <button type="primary" id="{{is_login}}">立即注册</button>
+      </view>
+</view>
+

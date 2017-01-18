@@ -1,0 +1,73 @@
+<!-- pages/home/home.wxml首页 -->
+<view class="container flex-wrap flex-direction-col">
+  <!-- 轮播图 -->
+  <view class="my-swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" height="150"  />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="id_name bt-f2 bb-f2 color-black">
+    <view id="line"></view>
+    <view class="name">{{username}}</view>
+    <view class="login_btn" bindtap="login">{{login_m}}</view>
+  </view>
+  <!-- 三大块 -->
+  <view class="weui-flex bb-f2">
+    <view class="weui-flex__item br-f2">
+      <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+          <image src="../../image/local_y.png" class="b_icon"></image>
+          <view class="weui-msg__title" class="b_txt">已买到的商品</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex__item br-f2">
+      <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+          <image src="../../image/tab1.png" class="b_icon"></image>
+          <view class="weui-msg__title" class="b_txt">进货车</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+          <image src="../../image/local_r.png" class="b_icon"></image>
+          <view class="weui-msg__title" class="b_txt">收货地址</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 找货源 -->
+  <view class="id_name bt-f2 color-black">
+    <view id="line"></view>
+    <view class="name">找货源</view>
+    <view class="login_btn">
+      更多>
+      >
+    </view>
+  </view>
+  <!-- 跳转列表 -->
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd color-darkgray">灯品汇商城</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd color-darkgray">灯品汇商城</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd color-darkgray">灯品汇商城</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd color-darkgray">灯品汇商城</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
